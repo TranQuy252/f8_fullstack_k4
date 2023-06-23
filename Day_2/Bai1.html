@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            background-color: mediumturquoise;
+            border: 0;
+            margin-top: 12px;
+            padding: 10px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+        }
+        input {
+            width: 50%;
+        }
+        select {
+            width: 52%;
+        }
+    </style>
+</head>
+<body>
+    <h2><b>Try a free sample</b></h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/>
+        Quaerat facilis nam sed accusantium, ab facere culpa illum cupiditate dolores amet fugiat.<br/>
+        Odit, itaque earum repudiandae explicabo fuga saepe eveniet dolore.
+    </p>
+    <table border="0" width="100%">
+        </tr>
+        <!--first name-->
+        <tr>
+            <td>
+                <label for="First name">First name</label>
+                <input type="text" name="ho_ten" placeholder="John" id="">
+            </td>
+            <td>
+                <label for="Lastname">Last name</label>
+                <input type="text" name="ho_ten" placeholder="Smith" id="">
+            </td>
+        </tr>
+        <!--Email-->
+        <tr>
+            <td>
+                <label for="Email address">Email address</label>
+                <input type="email" name="email" placeholder="John@example.com" id="">
+            </td>
+            <td>
+                <label for="Address">Address</label>
+                <input type="address" name="ho_ten" placeholder="Silk St" id="">
+            </td>
+        </tr>
+        <!--City-->
+        <tr>
+            <td>
+                <label for="City">City</label>
+                <input type="text" name="city" placeholder="John" id="">
+            </td>
+            <td>
+                <label for="State">State <span style="color: gainsboro;">(optional)</span></label>
+                <input type="text" name="state" placeholder="Smith" id="">
+            </td>
+        </tr>
+        <!--Zip...-->
+        <tr>
+            <td>
+                <label for="first name">First name</label>
+                <input type="number" name="Zip code" placeholder="EC2Y..." id="">
+            </td>
+            <td>
+                <form action="xu_ly" method="post">
+                    <label for="Country">Country</label>
+                    <select name="Country" id="Country">
+                        <option value="UK">United Kingdom</option>
+                        <option value="US">US</option>
+                        <option value="UN">UN</option>
+                        <option value="Viet Nam">Viet Nam</option>
+                    </select>
+                </form>
+            </td>
+        </tr>
+        <!--button-->
+        <tr>
+            <td colspan="2">
+                <button><span style="color: aliceblue;">SEND ME FREE COFFEE</span></button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
