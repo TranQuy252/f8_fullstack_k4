@@ -1,0 +1,24 @@
+.map-detail {
+    display         : inline-block;
+    height          : 285px;
+    width           : 250px;
+    background-color: #f6f6f6;
+    padding         : 5px;
+    padding-left: 15px;
+    padding-top : 10px
+}
+
+.map-section{
+    display: flex;
+    margin-top: 30px;
+}
+
+table {
+    border    : 2px solid #B09757;
+    color     : #B09757;
+    text-align: center;
+}
+
+p {
+    font-size: 15px;
+}

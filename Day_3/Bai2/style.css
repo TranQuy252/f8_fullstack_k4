@@ -1,0 +1,31 @@
+h2 {
+    text-align: center;
+}
+
+.line {
+    background-image: linear-gradient(to right, #5CA7FB, #6372FF);
+    width: 50px;
+    height: 2px;
+    margin-left: 48%;
+}
+
+.feedback {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    width : 33.33%;
+    margin-top : 50px;
+}
+
+.feedbacklist {
+    margin-left : 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-wrap : wrap;
+}
+
+p {
+    margin-bottom: 16px;
+    margin-right : 20px;
+    font-size : 12px;
+}
