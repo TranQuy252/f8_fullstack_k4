@@ -1,0 +1,30 @@
+.manual label {
+display: inline-block;
+margin-bottom: 15px;
+width: 90%;
+height: 35px;
+padding-top: 15px;
+font-size: 1.4rem;
+margin-left: 10px;
+padding-left: 20px;
+background-color: #fc7f4e;
+color: #fff;
+}
+
+.manual-content {
+display: none;
+}
+
+.manual label i.fa-minus {
+display: none;
+}
+
+input:checked ~ label .fa-minus {
+display: inline-block;
+}
+input:checked ~ label .fa-plus {
+display: none;
+}
+input:checked ~ label ~ .manual-content {
+display: block;
+}

@@ -1,0 +1,235 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  margin-left: 35%;
+} 
+
+p {
+  color: #ccc;
+  padding-bottom: 16px;
+  font-size: 1.2rem;
+}
+
+.invitation {
+  color: red;
+}
+
+h1 {
+  font-family: "Lobster", cursive;
+  font-size: 3.5rem;
+  color: rgb(43, 43, 43);
+  font-weight: 300;
+}
+
+textarea {
+  resize: none;
+}
+
+i {
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #ccc;
+  padding: 15px;
+  width: 20px;
+  text-align: center;
+}
+
+.fa-comment {
+  height: 84%;
+}
+
+input:not(input[type="checkbox"]),
+textarea,
+select {
+  border: none;
+  padding-left: 16px;
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 12px;
+}
+
+textarea {
+  height: 160px;
+}
+
+.name,
+.email,
+.phone,
+.subject,
+.message {
+  display: flex;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  width: 400px;
+  flex-direction: row-reverse;
+  padding-left: -1000px;
+}
+
+.send {
+  display: inline;
+}
+
+.input-container {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  user-select: none;
+  color: #ccc;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  border: 2px solid #ccc;
+}
+
+.input-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.input-container input:checked ~ .checkmark {
+  background-color: white;
+}
+
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.input-container input:checked ~ .checkmark::after {
+  display: block;
+}
+
+.input-container .checkmark::after {
+  left: 4px;
+  top: 0.1px;
+  width: 5px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.fa-star,
+.fa-sort {
+  display: block;
+  position: absolute;
+  color: #aaa;
+  background-color: #fff;
+}
+
+.fa-times {
+  display: none;
+  position: absolute;
+  color: #aaa;
+  background-color: #fff;
+  margin-bottom: auto;
+}
+
+.send {
+  border: none;
+  background-color: red;
+  color: #fff;
+  align-self: auto;
+  width: 65px;
+  height: 25px;
+}
+
+.send-area {
+  display: flex;
+  gap: 150px;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+input:hover,
+textarea:hover,
+select:hover {
+  outline: #000000 1px solid;
+}
+
+input:focus ~ .fa-star,
+textarea:focus ~ .fa-star,
+select:focus ~ .fa-star {
+  display: none;
+}
+
+input:focus .fa-times,
+textarea:focus ~ .fa-times,
+select:focus ~ .fa-times {
+  display: flex;
+}
+
+textarea:focus + label i,
+input:focus + label i,
+select:focus + label i,
+textarea:hover + label i,
+input:hover + label i,
+select:hover + label i {
+  background-color: #1a1a1a;
+  outline: 1.5px solid black;
+}
+
+.pop-up-name,
+.pop-up-email,
+.pop-up-number,
+.pop-up-subject,
+.pop-up-message {
+  position: absolute;
+  display: none;
+  width: 140px;
+  height: 40px;
+  background-color: #1a1a1a;
+  color: white;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  bottom: 82%;
+  left: 38%;
+  border-radius: 2px;
+}
+
+.pop-up-name{
+  bottom: 84%;
+}
+
+.pop-up-email {
+  bottom: 77%;
+}
+
+.pop-up-number {
+  bottom: 70%;
+}
+
+.pop-up-subject {
+  bottom: 63%;
+}
+
+.pop-up-message {
+  bottom: 56%;
+}
+
+input:focus ~ .pop-up-name,
+input:focus ~ .pop-up-email,
+input:focus ~ .pop-up-number,
+select:focus ~ .pop-up-subject,
+textarea:focus ~ .pop-up-message {
+  display: flex;
+}
