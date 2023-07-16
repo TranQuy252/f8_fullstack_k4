@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.special-services {
+  width: 1200px;
+  margin: 24px auto;
+  text-align: center;
+}
+h2 {
+  font-size: 48px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+.special-services-invitation {
+  font-size: 14px;
+  margin-top: 18px;
+}
+.service-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.service-list {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+  margin-top: 50px;
+}
+.service-item {
+  height: 265px;
+  width: 365px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.service-item img {
+}
+.service-item .service-name {
+  margin-top: 10px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+.service-item div {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.service-info {
+  font-size: 12px;
+}
+.service-item button {
+  border: none;
+  color: #fff;
+  background-color: darkblue;
+  padding: 10px 24px;
+}

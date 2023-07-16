@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sandbox-logo {
+  flex-grow: 2;
+}
+
+.sandbox-logo img {
+  width: 120px;
+  height: 44px;
+  margin-left: 28px;
+}
+.sandbox-header {
+  display: flex;
+  background-color: whitesmoke;
+  padding: 16px 48px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sandbox-nav .nav-list {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.sandbox-nav {
+  flex-grow: 1;
+}
+.nav-list > li > a {
+  color: #000;
+  font-weight: bold;
+}
+.nav-list > li > i {
+  font-size: 12px;
+}
+.information .fa-circle-info,
+.information .fa-magnifying-glass {
+  font-size: 18px;
+}
+.information .fa-magnifying-glass {
+  margin-left: 10px;
+  color: #000000b5;
+}
+
+.documentation-item {
+  position: relative;
+}
+
+.mega-menu {
+  position: absolute;
+  width: 1000px;
+  margin: 30px -900px;
+  display: none;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 1px 1px 5px #ccc;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 50px;
+  padding-right: 80px;
+}
+
+.mega-menu::before {
+  content: "";
+  position: absolute;
+  width: 1335px;
+  height: 40px;
+  top: -30px;
+}
+
+.mega-menu > div:nth-of-type(1) {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.mega-menu span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 12px;
+  color: #000000bb;
+}
+
+.mega-menu ul li a {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000bb;
+}
+
+.usage-list,
+.styleguide-list,
+.elements-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.styleguide-submenu {
+  margin-top: 20px;
+}
+
+.elements-submenu {
+  flex-grow: 6;
+  margin-left: 120px;
+}
+
+.documentation-item:hover .mega-menu {
+  display: flex;
+}
