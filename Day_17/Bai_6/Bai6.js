@@ -1,0 +1,2 @@
+var drawChessboard = function(){
+}
