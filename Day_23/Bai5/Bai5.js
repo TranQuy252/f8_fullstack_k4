@@ -1,0 +1,3 @@
+function generateSelectOptions(categories, child = "") {
+    
+}
