@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px;
+
+}
+.header .actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.header .actions .action-link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo{
+    height: 100px;
+    width: 100px;
+}
+.modal-box .overlay {
+    background: #0000009c;
+    position: fixed;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s linear;
+    transition-property: opacity, visibility;
+}
+.modal-box .link {
+    margin: 10px 0px;
+}
+.modal-box .link a{
+    padding: 40px;
+}
+.modal-box .form {
+    max-width: 600px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 15px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: -100%;
+    z-index: 1;
+    transition: top 0.3s linear;
+}
+
+.modal-box.show .form {
+    top: 30px;
+}
+
+.modal-box.show .overlay {
+    opacity: 1;
+    visibility: visible;
+}
+.form-submit {
+    outline: none;
+    background-color: #008d23;
+    margin-top: 12px;
+    padding: 12px 0px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    width: 390px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.form {
+    width: 460px;
+    min-height: 480px;
+    padding: 32px 24px;
+    text-align: center;
+    background: #fff;
+    border-radius: 2px;
+    margin: 24px;
+    align-self: center;
+    box-shadow: 0 2px 5px 0 rgba(51, 62, 73, 0.1);
+}
+.form-group {
+    display: flex;
+    margin: 30px 20px;
+    flex-direction: column;
+    position: relative;
+}
+
+.form-label,
+.form-message {
+    text-align: left;
+}
+
+input{
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+.register {
+    display: none;
+}
+.register.content-1{
+    display: block;
+}
+.login.content-1 {
+    display: none;
+}
+.link-nav .facebook img{
+    width: 30px;
+    height: 30px;
+}
+.link-nav .google img {
+    width: 30px;
+    height: 30px;
+}
+.link-nav{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.link-nav .google,
+.link-nav .facebook{
+    border-radius: 5px;
+    padding: 8px 50px ;
+    background-color: #E2E8F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px;
+}
+a.forgot-pass{
+    float: right;
+    margin-right: 25px;
+    font-style: italic;
+    color: #808080;
+}
+span.text{
+    color: #4378FF;
+}
+span.footer{
+    width: 390px;
+    margin-left: 20px;
+}
+.or{
+    height: 1px;
+    width: 390px;
+    border: 1px solid #F7F7F7;
+    margin-left: 20px;
+}
+
+.form-group.error input{
+    border-color: #F05656ed ;
+}
+.form-group .form-message{
+    color:#F05656 ;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    visibility: hidden;
+    font-style: italic;
+}
+.form-group.error .form-message{
+    visibility: visible;
+}
+.form-group .form-message.success {
+    display: none;
+}
