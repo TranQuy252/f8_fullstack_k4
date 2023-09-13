@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #8758ff;
+    display: flex;
+    justify-content: center;
+}
+.box{
+    margin-top: 100PX;
+    display: block;
+    background: #151533;
+}
+.title{
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+.inputTask{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    width: 450px;
+}
+.input{
+    border: none;
+    border:1px solid #8758ff;
+    outline: none;
+    background-color: #151533;
+    padding: 5px 10px;
+    color: #fff;
+}
+.input::placeholder{
+    background-color: #151533;
+    line-height: 25px;
+    color: #999;
+}
+.btn{
+    padding: 5px 10px;
+    border:1px solid #8758ff;
+    color: #fff;
+    background-color: #8758ff;
+    cursor: pointer;
+}
+.task{
+    margin-bottom: 30px;
+    margin-left: 90px;
+    background-color: #8758ff;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 265px;
+    border-radius: 5px;
+}
+.content{
+    color: #fff;
+    
+}
+.content .text{
+    background-color: #8758ff;
+    padding: 7px 10px;
+    border:1px solid #8758ff;
+    color: #fff;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+}
+.content .text:not(:read-only){
+    color: #fff;
+}
+i{
+    display: block;
+}
+.btn-action{
+    display: flex;
+    align-items: center;
+}
+.rewrite, .delete{
+    color: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
