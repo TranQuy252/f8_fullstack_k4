@@ -1,0 +1,163 @@
+* {
+box-sizing: border-box;
+}
+
+body {
+font-family: system-ui, sans-serif;
+}
+
+button {
+appearance: none;
+border: none;
+background-color: #212529;
+border: 1px solid #212529;
+color: white;
+border-radius: 5px;
+font-size: 16px;
+padding: 10px 20px;
+cursor: pointer;
+margin-left: 5px;
+}
+
+b {
+font-weight: bold;
+}
+
+i {
+font-style: italic;
+}
+
+u {
+text-decoration: underline;
+}
+
+.doc-editor {
+position: relative;
+width: 1224px;
+max-width: 100%;
+padding: 0px 12px;
+margin: 0 auto;
+}
+
+.doc-editor-heading {
+font-size: 24px;
+font-weight: 500;
+padding: 10px 0px;
+margin-bottom: 10px;
+border-bottom: 2px solid rgb(204, 204, 204);
+}
+
+.doc-editor-function {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.doc-editor-save {
+display: flex;
+position: relative;
+}
+
+.btn-save {
+display: flex;
+align-items: center;
+background-color: rgb(13, 110, 253);
+margin-right: 10px;
+margin-left: 0;
+transition: background-color .3s linear;
+border: none;
+padding: 10px 16px;
+}
+
+.btn-save i {
+margin-left: 6px;
+font-size: 14px;
+}
+
+.btn-save:focus + .contextmenu {
+display: flex;
+}
+
+.contextmenu {
+display: none;
+position: absolute;
+top: 40px;
+left: 0;
+flex-direction: column;
+border: 1px solid rgb(200, 200, 200);
+border-radius: 5px;
+padding: 5px 0px;
+}
+
+.contextmenu button {
+margin: 0;
+color: black;
+text-align: left;
+background-color: white;
+border-radius: 0px;
+width: 160px;
+border: none;
+}
+
+.contextmenu button:hover {
+background-color: #f8f9fa;
+}
+
+.input-file-name {
+padding-left: 10px;
+font-size: 17px;
+font-weight: lighter;
+}
+
+.doc-editor-edit {
+display: flex;
+align-items: center;
+}
+
+.btn-bold {
+font-weight: bolder;
+}
+
+.btn-underline {
+text-decoration: underline;
+}
+
+.btn-italic {
+font-style: italic;
+}
+
+.input-pick-color {
+-webkit-appearance: none;
+appearance: none;
+border: none;
+width: 50px;
+height: 50px;
+cursor: pointer;
+background-color: transparent;
+}
+
+.input-pick-color::-webkit-color-swatch {
+border-radius: 5px;
+border: 1px solid rgb(105, 105, 105);
+}
+
+.doc-editor-text {
+box-shadow: 0 0 5px 0 rgba(0,0,0,.5);
+margin: 30px 0;
+height: 300px;
+outline: none;
+padding: 20px;
+overflow-y: auto;
+line-height: 1.25;
+font-family: system-ui, sans-serif;
+font-size: 16px;
+}
+
+.doc-editor-count {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.doc-editor-word {
+  margin-left: 15px;
+}
