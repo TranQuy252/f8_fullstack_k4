@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do</title>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="todo-wrapper">
+                <h1 class="heading">Todos App</h1>
+                <div class="todo-control">
+                    <div class="todo-search">
+                        <input type="text" name="search" id="search" placeholder="Search Todos">
+                        <button class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <button class="add-todo">
+                        Add Todos
+                    </button>
+                </div>
+            </div>
+            <div class="add-todo-block">
+                <div class="action-add-todo">
+                    <div class="container-add-todo">
+                        <input type="text" name="add-todo" id="add-todo-input" placeholder="Add todos">
+                        <hr />
+                        <div class="action-btn-add-todo">
+                            <button type="submit" class="btn-save">
+                                Save
+                            </button>
+                            <button class="btn-cancel">
+                                Cancel
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="to-do-list"></div>
+            <div>
+                <div class="to-do-completed">Completed Todos <span>0</span> <i class="fa-solid fa-arrow-down"></i></div>
+                <div class="to-do-list-completed" style="margin-top: 50px; background: red;"></div>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
